@@ -1,0 +1,147 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", "Times New Roman", Times, serif;
+  -ms-overflow-style: none; /*Hide scrollbar IE and Edge */
+  scrollbar-width: none; /*Hide scrollbar Firefox */
+}
+
+.header-1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-height: 25vh;
+  background-color: #135bcf;
+  color: #fff;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+  margin-left: 25vw;
+}
+h4 {
+  font-size: 20px;
+  margin-left: 25vw;
+}
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 25vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  color: #fff;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.main-nav {
+  padding: 2vw;
+  font-size: 18px;
+  line-height: 5vh;
+}
+
+.intro-nav {
+  padding-left: 2.5vw;
+  font-size: 16px;
+  line-height: 3.5vh;
+}
+
+.Main-content {
+  margin: 2vw 15vw 5vw 30vw;
+  font-size: 18px;
+}
+
+h3 {
+  padding-top: 5px;
+}
+
+.foot {
+  border-top: 1px solid #000;
+  text-align: right;
+  font-size: 10px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: auto;
+  margin-bottom: 5px;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.Authors {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+}
+
+.Authors p {
+  font-size: 14px;
+}
+
+.Main-content > h2,
+.Main-content > h3,
+.Main-content > h5 {
+  margin-left: -5vw;
+}
+
+.main-nav > li > a:link,
+.main-nav > li > a:visited,
+.intro-nav > li > a:link,
+.intro-nav > li > a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-nav > li > a:hover,
+.intro-nav > li > a:hover {
+  color: #5c5c5c;
+  text-decoration: underline;
+}
+
+.main-nav > li > a:active,
+.intro-nav > li > a:active {
+  color: #303030;
+  text-decoration: underline;
+}
