@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Project PERFOS Docs" />
+    <meta name="author" content="Hritvika Chunduri" />
+    <meta name="keywords" content="Python, Dashboard, Finance, Documentation" />
+    <title>Project PERFOS Docs</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&family=Markazi+Text:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-1">
+        <h1>Project PERFOS</h1>
+        <h4>Documentation</h4>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <!-- Navigation sidebar -->
+      <nav>
+        <div class="sidenav">
+          <ul class="main-nav" type="none">
+            <li>
+              <hr />
+              <a href="#intro">Introduction</a>
+              <hr />
+              <ul class="intro-nav" type="none">
+                <li><a href="#python">Pure Python</a></li>
+                <li><a href="#simple">Simplicity</a></li>
+                <li><a href="#visuals">Visual analytics</a></li>
+              </ul>
+            </li>
+            <hr />
+            <li><a href="#limits">Limitations</a></li>
+            <hr />
+            <li><a href="#quicks">Quick start</a></li>
+            <hr />
+            <li><a href="#versions">Versions</a></li>
+            <hr />
+          </ul>
+          <button
+            class="button-54"
+            role="button"
+            onclick="document.location='#'"
+          >
+            To top
+          </button>
+        </div>
+      </nav>
+
+      <!-- Text -->
+      <div class="Main-content Intro">
+        <h2 id="intro">Introduction</h2>
+        <br />
+        <p>
+          The main purpose of this project was an application for data
+          visualisation, but we branched out into something more commercial -
+          something more useful, like budgeting. This project can also be used
+          for sole visualization purposes, though. What's unique about Project
+          PERFOS?<br /><br />
+          1. Pure Python<br />
+          2. Simplicity<br />
+          3. Visual feedback<br />
+        </p>
+      </div>
+      <div class="Main-content Python">
+        <h3 id="python">Pure Python</h3>
+        <br />
+        <p>
+          The application uses ONLY python - since the purpose is data analysis,
+          and the go-to in our opinion was Python, we thought, "Why not make the
+          whole thing using just Python?" We haven't used many libraries,
+          however - Only SQLite3, Tkinter, Pandas and Matplotlib. Which leads us
+          to the next feature - Simplicity.
+        </p>
+      </div>
+      <div class="Main-content Simple">
+        <h3 id="simple">Simplicity</h3>
+        <br />
+        <p>
+          The code of this application is less than a total of 400 lines and
+          uses a unique interface to simplify usage as well as processes.
+        </p>
+        <br />
+        <ul>
+          <li>
+            Graphs are displayed in messageboxes(Tkinter) upon respective button
+            press.
+          </li>
+          <li>
+            Transaction history is displayed in a disabled text area to the
+            right which is updated in real time, and the data is fetched from
+            the database and stored in a pandas dataframe (which is the content
+            of the text area).
+          </li>
+          <li>
+            The database, made using SQLite3, is stored locally and can be
+            cleared using the 'Clear History' button.
+          </li>
+          <li>
+            Income/Expense as well as Payment records are input through the GUI
+            which are then stored in the database.
+          </li>
+          <li>
+            Goal tracking: When the user's balance reaches the set goal amount,
+            the application resets the goal value and displays the respective
+            success message.
+          </li>
+        </ul>
+      </div>
+      <div class="Main-content Visual">
+        <h3 id="visuals">Visual analytics</h3>
+        <br />
+        <p>
+          The data within the database is analyzed and visualised (which is
+          Python's cup of tea) and three types of graphs are made which can be
+          accessed using the respective buttons.
+        </p>
+        <p>
+          a. Line graph - Income vs Expenses<br />
+          b. Pie chart - Expense category distribution<br />
+          c. Bar Graph - Savings against Income<br />
+        </p>
+      </div>
+      <div class="Main-content Limits">
+        <h2 id="limits">Limitations</h2>
+        <br />
+        <p>
+          1. Data Security: Storing sensitive financial data requires encryption
+          and security measures, however since the database is stored locally
+          the security of the entered data will depend on the user's system's
+          own security.
+          <br />
+          2. Handling Large Data: If a user has a lot of data, efficient data
+          management and visualization can become complex and could take a while
+          (Python is pretty slow).
+        </p>
+      </div>
+      <div class="Main-content Quicks">
+        <h2 id="quicks">Quick start guide</h2>
+        <br />
+        <p>
+          Click 'Load/Refresh' in the transactions history section to display
+          past entries. The database will initially contain 4-5 sample entries.
+          Click the Clear button to clear them and then make your own entries.
+          They will be saved and available the next time you open the
+          application.
+        </p>
+        <br />
+        <p>
+          Click any of the buttons in the 'Visualisation' area to create the
+          respective graph from the data within the database. It will be
+          displayed in a messagebox.
+        </p>
+      </div>
+      <div class="Main-content Versions">
+        <h2 id="versions">Versions</h2>
+        <h5>Dates are in the format (DD-MM-YYYY)</h5>
+        <br />
+        <h5>V0.1 (10-09-2024)</h5>
+        <p>
+          As of now, many features are missing/do not work. However, the basics
+          (Income, Expenses and Graphs) are functional.
+        </p>
+        <br />
+        <h5>V0.2 (26-09-2024)</h5>
+        <p>
+          Added a section to display transaction history, a section to select
+          dates, formatted the GUI to look more... presentable, and added the
+          payment records section. An API relating to this may be added in the
+          future.
+        </p>
+      </div>
+      <div class="Main-content Authors">
+        <h6>Developers:</h6>
+        <p>Hritvika Chunduri</p>
+        <p>Kabir Nagdev</p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="foot">
+        <p
+          xmlns:cc="http://creativecommons.org/ns#"
+          xmlns:dct="http://purl.org/dc/terms/"
+        >
+          <span property="dct:title">Project PERFOS Docs</span> by
+          <span property="cc:attributionName">Hritvika Chunduri</span> is marked
+          with
+          <a
+            href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1"
+            target="_blank"
+            rel="license noopener noreferrer"
+            style="display: inline-block"
+            >CC0 1.0<img
+              style="
+                height: 22px !important;
+                margin-left: 3px;
+                vertical-align: text-bottom;
+              "
+              src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+              alt="" /><img
+              style="
+                height: 22px !important;
+                margin-left: 3px;
+                vertical-align: text-bottom;
+              "
+              src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1"
+              alt=""
+          /></a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
