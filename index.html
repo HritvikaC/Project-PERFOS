@@ -29,11 +29,14 @@
     <main>
       <!-- Navigation sidebar -->
       <nav>
-        <div class="sidenav">
+        <div class="sidenav" id="mySideNav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
           <ul class="main-nav" type="none">
             <li>
               <hr />
-              <a href="#intro">Introduction</a>
+              <a href="#intro">Overview</a>
               <hr />
               <ul class="intro-nav" type="none">
                 <li><a href="#python">Pure Python</a></li>
@@ -49,19 +52,22 @@
             <li><a href="#versions">Versions</a></li>
             <hr />
           </ul>
-          <button
-            class="button-54"
-            role="button"
-            onclick="document.location='#'"
-          >
-            To top
-          </button>
         </div>
       </nav>
+      <button onclick="openNav()" class="nav-button">
+        <div class="menubuttonbox">
+          <div>
+            <div class="menu-button"></div>
+            <div class="menu-button"></div>
+            <div class="menu-button"></div>
+          </div>
+          <div class="menutext"><b>Menu</b></div>
+        </div>
+      </button>
 
       <!-- Text -->
       <div class="Main-content Intro">
-        <h2 id="intro">Introduction</h2>
+        <h2 id="intro">Overview</h2>
         <br />
         <p>
           The main purpose of this project was an application for data
@@ -223,5 +229,6 @@
         </p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
