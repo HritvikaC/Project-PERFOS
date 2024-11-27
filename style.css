@@ -18,54 +18,59 @@ html {
 .header-1 {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: auto;
-  max-height: 25vh;
   background-color: #135bcf;
   color: #fff;
   align-items: center;
 }
 
 h1 {
-  font-size: 50px;
-  margin-left: 25vw;
+  font-size: 2.5em;
+  text-align: center;
 }
+
 h4 {
-  font-size: 20px;
-  margin-left: 25vw;
+  font-size: 1em;
+  text-align: center;
 }
+
 .sidenav {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  max-width: 25vw;
   position: fixed;
+  width: 20vw;
+  height: 100%;
   top: 0;
   left: 0;
   background-color: #111;
   color: #fff;
   overflow-x: hidden; /* Disable horizontal scroll */
+  overflow: hidden;
 }
 
 .main-nav {
   padding: 2vw;
-  font-size: 18px;
-  line-height: 5vh;
+  font-size: 2vw;
+  line-height: 3rem;
 }
 
 .intro-nav {
   padding-left: 2.5vw;
-  font-size: 16px;
-  line-height: 3.5vh;
+  font-size: 2vw;
+  line-height: 2rem;
 }
 
 .Main-content {
-  margin: 2vw 15vw 5vw 30vw;
+  margin: 5vw 15vw 5vw 30vw;
   font-size: 18px;
 }
 
-h3 {
-  padding-top: 5px;
+.Intro {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh;
 }
 
 .foot {
@@ -92,8 +97,7 @@ h3 {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-top: auto;
-  margin-bottom: 5px;
+  margin: auto 1vw 10px;
 }
 
 .button-54:active {
