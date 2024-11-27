@@ -154,6 +154,30 @@ h4 {
   text-decoration: underline;
 }
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 1px solid #111; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #fff; /* Set a background color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  height: 5vw;
+  width: 5vw;
+  object-fit: contain;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+#myBtn:active {
+  background-color: #555;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media only screen and (max-width: 500px) {
   .main-nav,
@@ -168,5 +192,9 @@ h4 {
   }
   .header-1 h4 {
     font-size: 5vw;
+  }
+  #myBtn {
+    height: 15vw;
+    width: 15vw;
   }
 }
